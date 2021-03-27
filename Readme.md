@@ -11,7 +11,7 @@ To run the main program, type the following command in the command line:
 ```
 python aerial_imagery_retrieval.py
 ```
-then follow the prompt to enter the coordinates.  This program take two pairs of lat/lon as input.  The first lat/lon pair should be the coordinates for the top right corner of the bounding box.  The second lat/lon pair should be the coordinates for the bottom left corner of the bounding box.  
+then follow the prompt to enter the coordinates.  This program take two pairs of lat/lon as input.  The first lat/lon pair should be the coordinates for the top left corner of the bounding box.  The second lat/lon pair should be the coordinates for the bottom right corner of the bounding box.  
 
 
 Some sample coordinates used for testing the program which successfully returned a aerial image are as follows:
