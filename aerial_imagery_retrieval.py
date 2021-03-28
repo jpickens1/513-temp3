@@ -41,7 +41,6 @@ def check_null_image(tile_left, tile_right, level):
     for i_y in range(tile_left[1], tile_right[1]+1):
         for i_x in range(tile_left[0], tile_right[0]+1):
             quad_key=helper.get_quad_key((i_x, i_y), level)
-            #print("quadkey: ",quad_key)
             image_array=get_image("http://h0.ortho.tiles.virtualearth.net/tiles/h"+quad_key+".jpeg?g=131", "tile_"+str(i)+".jpeg")
             
             # Check if the returned image is a null image, return 0 if retrieved image is null, return 1 otherwise
