@@ -42,7 +42,7 @@ def get_tile_from_latlon(lat,lon,level):
     return (tile_x, tile_y)
 
 ## Get quad key string
-def get_quad_keyq(tiles, level):
+def get_quad_key(tiles, level):
 
     quad_key=""
 
@@ -58,25 +58,8 @@ def get_quad_keyq(tiles, level):
         level-=1
 
     return quad_key
-def get_quad_key(tiles, level):
-    """
-    :param tileX: 
-    :param tileY: 
-    :param level: 
-    :return: quad key
-    """
-    quad_key = str()
-    for i in range(level, 0, -1):
-        d = '0'
-        m = (1<<(i-1)) & 0xffffffff
-        if (tiles[0] & m) != 0:   d = chr(ord(d) + 1)
 
-        if (tiles[1] & m) != 0:
-            d = chr(ord(d) + 1)
-            d = chr(ord(d) + 1)
-        quad_key += d
-    return quad_key
-
+## Correct the coordinates by swapping them, in case the user made a mistake
 def correct_inputs(x, y):
     right_1=max(x[1],y[1])
     right_0=max(x[0],y[0])
