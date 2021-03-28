@@ -17,4 +17,5 @@ then follow the prompt to enter the coordinates.  This program take two pairs of
 Some sample coordinates used for testing the program which successfully returned a aerial image are as follows:
 1. IIT Main Campus: 41.837909 -87.629252  41.833163 -87.623726   
 2. Grant Park: 41.878181 -87.623866  41.869907 -87.617474
-3. Nacy Pier: 41.892591 -87.609226 41.889484 -87.599752
+3. Navy Pier: 41.892591 -87.609226 41.889484 -87.599752
+4. Planetarium: 41.867154 -87.607633  41.865820 -87.605703
