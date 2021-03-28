@@ -1,4 +1,5 @@
-CS513 Assignment 3 Readme
+CS513 Assignment 3 Readme 
+
 Team members:  Jiaxing Wu(A20398273) /  Jingwen Pickens(A20349887) / Sumukh Ballal(A20442681) / Hyesoo Noh(A20360464)
 
 Please install the following libraries prior to the main program
