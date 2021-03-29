@@ -53,6 +53,7 @@ def check_null_image(tile_left, tile_right, level):
             
 
 ## Find the max level of detail for the input bounding box, start with level = 23
+## Return the max level of detail found, along with the tile coordinates at that level
 def find_max_level(lat1,lon1,lat2,lon2,level):
 
     # Start with the max level of 23, for each level, check if the return images are null, decrement the level if null images were returned
@@ -82,7 +83,7 @@ def get_image(url, image_name):
     response=requests.get(url)
 
     # Write image to /tiles directory 
-    with open("tiles/"+image_name, "wb") as f:
+    with open("../results/tiles/"+image_name, "wb") as f:
         f.write(response.content)
 
     image=numpy.asarray(bytearray(response.content), dtype="uint8")
@@ -117,7 +118,7 @@ def download_images(tile_left, tile_right, level):
 ## Stitch the return tiles
 def stitch_images(images):
     images=numpy.concatenate(images, 0)
-    cv.imwrite("final_stitched_image.jpeg", images)
+    cv.imwrite("../results/final_stitched_image.jpeg", images)
 
 
 if __name__ == '__main__':
