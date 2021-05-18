@@ -1,4 +1,4 @@
-Satellite Image Retrieval via Bing Maps Tile System
+## Satellite Image Retrieval via Bing Maps Tile System
 
 This program uses Bing maps tile system to automatically download aerial imagery (maximum resolution available) given a lat/lon bounding box and compose one image of the exact bounding box region.  The first lat/lon pair should be the coordinates for the top left corner of the bounding box.  The second lat/lon pair should be the coordinates for the bottom right corner of the bounding box.  
 
