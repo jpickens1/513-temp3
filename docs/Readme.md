@@ -1,6 +1,6 @@
 ## Satellite Image Retrieval via Bing Maps Tile System
 
-This program uses Bing maps tile system to automatically download aerial imagery (maximum resolution available) given a lat/lon bounding box and compose one image of the exact bounding box region.  The first lat/lon pair should be the coordinates for the top left corner of the bounding box.  The second lat/lon pair should be the coordinates for the bottom right corner of the bounding box.  
+This program uses Bing maps tile system to automatically download aerial imagery (maximum resolution available) given a lat/lon bounding box and compose one image of the exact bounding box region.  
 
 Please install the following library prior to running the py script
 ```
@@ -11,7 +11,7 @@ To run the script, type the following command in the terminal:
 ```
 python aerial_imagery_retrieval.py
 ```
-then follow the prompt to enter the coordinates.  
+then follow the prompt to enter the coordinates.  The first lat/lon pair should be the coordinates for the top left corner of the bounding box.  The second lat/lon pair should be the coordinates for the bottom right corner of the bounding box.  
 
 
 Some sample coordinates:
