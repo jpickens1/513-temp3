@@ -83,7 +83,7 @@ def get_image(url, image_name):
     response=requests.get(url)
 
     # Write image to /tiles directory 
-    with open("../results/tiles/"+image_name, "wb") as f:
+    with open("results/tiles/"+image_name, "wb") as f:
         f.write(response.content)
 
     image=numpy.asarray(bytearray(response.content), dtype="uint8")
@@ -118,7 +118,7 @@ def download_images(tile_left, tile_right, level):
 ## Stitch the return tiles
 def stitch_images(images):
     images=numpy.concatenate(images, 0)
-    cv.imwrite("../results/final_stitched_image.jpeg", images)
+    cv.imwrite("results/final_stitched_image.jpeg", images)
 
 
 if __name__ == '__main__':
